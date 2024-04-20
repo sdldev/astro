@@ -1,9 +1,9 @@
 FROM node:lts AS build
 WORKDIR /app
 COPY package*.json pnpm-lock.yaml ./
-RUN pnpm install
+RUN npm install
 COPY . .
-RUN pnpm build
+RUN npm run build
 
 FROM nginx:alpine AS runtime
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
