@@ -1,16 +1,17 @@
 ---
-
+import Layout from "@/layouts/MainLayout.astro";
+import { Typing } from "@/components/Typing";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>done</h1>
-	</body>
-</html>
+<Layout title="Project node">
+  <section class="text-center p-5">
+    <h1 class="mb-6 text-yellow-600 dark:text-yellow-600 text-[5vw] font-[700]">Project Node</h1>
+    <h2
+      class="max-w-3xl mb-6 font-light text-gray-200 lg:mb-8 md:text-lg lg:text-2xl dark:text-gray-400"
+    >
+      Trust
+      
+      <Typing aria-hidden="true" client:load />
+    </h2>
+  </section>
+</Layout>
