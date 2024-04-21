@@ -6,15 +6,11 @@ export function Nav() {
 
   const decoLinks = [
     {
-      name: "Testnet",
-      to: "/",
-    },
-    {
-      name: "Mainnet",
-      to: "/",
-    },
-    {
       name: "Services",
+      to: "/",
+    },
+    {
+      name: "Project",
       to: "/",
     },
     {
